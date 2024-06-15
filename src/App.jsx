@@ -102,7 +102,7 @@ const ContactCard = () => {
         <Card.Body>
           <Card.Text className='card-text-custom'>lachlanmcleod333@gmail.com</Card.Text>
           <Card.Text className='card-text-custom'>+61 0432 540 677</Card.Text>
-          <Card.Text className='card-text-custom'><a href='https://github.com/LachlanMcL'>LachlanMcL <Image className='gitIcon' src={gitHubIcon}/></a></Card.Text>
+          <Card.Text className='card-text-custom'><a href='https://github.com/LachlanMcL' target="_blank">LachlanMcL <Image className='gitIcon' src={gitHubIcon}/></a></Card.Text>
           <br></br>
           <Card.Text className='card-text-custom'>Fast learner, eager to cement myself in the programming world</Card.Text>
         </Card.Body>
@@ -246,13 +246,13 @@ const TaskPlannerProject = () => {
     <div className='p-2'>
       <Card className='card-custom'>
         <Card.Body>
-          <Card.Title><a href='https://github.com/LachlanMcL/task-app'>Task Planner Application - May 2024 <Image className='gitIcon' src={gitHubIcon}/></a></Card.Title>
+          <Card.Title><a href='https://github.com/LachlanMcL/task-app' target="_blank">Task Planner Application - May 2024 <Image className='gitIcon' src={gitHubIcon}/></a></Card.Title>
           <ul><Card.Text>
               <li>Developed a fully functional task planner website utilizing the React.js framework.</li>
               <li>Enabled users to view and complete tasks, set new tasks, assign priority levels, and add detailed descriptions.</li>
               <li>Implemented a robust database testing environment using json-server.</li>
               <li>Utilized API endpoints for creating, retrieving, and deleting tasks in the database.</li>
-              <li>Deployed an <a href='https://task-app-t8my.onrender.com/'>example</a> website on Render.com. <span style={{color: "grey"}}>(Sometimes needs a minute to reboot)</span></li>
+              <li>Deployed an <a href='https://task-app-t8my.onrender.com/' target="_blank">example</a> website on Render.com. <span style={{color: "grey"}}>(Sometimes needs a minute to reboot)</span></li>
               <li>Established a comprehensive deployment pipeline for seamless future updates.</li>
           </Card.Text></ul>
         </Card.Body>
@@ -266,13 +266,13 @@ const WeatherAppProject = () => {
     <div className='p-2'>
       <Card className='card-custom'>
         <Card.Body>
-          <Card.Title><a href='https://github.com/LachlanMcL/weather-app'>Weather App - June 2024 <Image className='gitIcon' src={gitHubIcon}/></a></Card.Title>
+          <Card.Title><a href='https://github.com/LachlanMcL/weather-app' target="_blank">Weather App - June 2024 <Image className='gitIcon' src={gitHubIcon}/></a></Card.Title>
           <ul><Card.Text>
-            <li>Developed a static website utilizing the University of <a href='https://studies.cs.helsinki.fi/restcountries/'>Helsinki's country API</a> to provide users with comprehensive country information.</li>
-            <li>Enabled users to select a specific country to view current weather data, retrieved from the <a href='https://openweathermap.org/api'>Open Weather Map API</a>.</li>
+            <li>Developed a static website utilizing the University of <a href='https://studies.cs.helsinki.fi/restcountries/' target="_blank">Helsinki's country API</a> to provide users with comprehensive country information.</li>
+            <li>Enabled users to select a specific country to view current weather data, retrieved from the <a href='https://openweathermap.org/api' target="_blank">Open Weather Map API</a>.</li>
             <li>Leveraged the Bootstrap CSS library to create a clean and visually appealing layout.</li>
             <li>Implemented the application using the React.js framework.</li>
-            <li>Deployed an <a href='https://weather-app-qek0.onrender.com/'>example</a> application on Render.com.</li>
+            <li>Deployed an <a href='https://weather-app-qek0.onrender.com/' target="_blank">example</a> application on Render.com.</li>
           </Card.Text></ul>
         </Card.Body>
       </Card>
