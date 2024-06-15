@@ -66,6 +66,10 @@ a {
   max-width: 30px;
 }
 
+.linkedinIcon {
+  max-width: 20px;
+}
+
 /* two background colours */
 
 .outer-container {

@@ -6,6 +6,7 @@ import capstoneImage4 from '../src/assets/Capstone-Project-Screenshots/Capture12
 import capstoneImage5 from '../src/assets/Capstone-Project-Screenshots/Capture13.jpg'
 import capstoneImage6 from '../src/assets/Capstone-Project-Screenshots/Capture14.jpg'
 import gitHubIcon from '../src/assets/gitHubIcon.jpg'
+import linkedinIcon from '../src/assets/linkedinIcon.jpg'
 
 import {Row, Col, Stack, Button, Card, Image, Carousel, Collapse} from 'react-bootstrap'
 import { useState } from 'react'
@@ -39,6 +40,7 @@ const ContactCard = () => {
           <Card.Text className='card-text-custom'>lachlanmcleod333@gmail.com</Card.Text>
           <Card.Text className='card-text-custom'>+61 0432 540 677</Card.Text>
           <Card.Text className='card-text-custom'><a href='https://github.com/LachlanMcL' target="_blank">LachlanMcL <Image className='gitIcon' src={gitHubIcon}/></a></Card.Text>
+          <Card.Text className='card-text-custom'><a href='https://www.linkedin.com/in/lachlanmcleod-/' target="_blank">Lachlan McLeod <Image className='linkedinIcon' src={linkedinIcon}/></a></Card.Text>
           <br></br>
           <Card.Text className='card-text-custom'>Fast learner, eager to cement myself in the programming world</Card.Text>
         </Card.Body>
