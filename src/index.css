@@ -1,15 +1,16 @@
-@media (min-width: 40em) { /*pc */
+@media (min-width: 40em) { /* pc */
   .card {
-    width: 50rem;
+    width: 40rem;
   }
 
   .card-custom {
-    width: 45rem;
+    width: 35rem;
   }
 
   .img-profile {
+    margin: auto;
     width: 100%;
-    height: 45rem;
+    height: 38rem;
     object-fit: cover;
   }
 
@@ -19,7 +20,7 @@
   }
 }
 
-@media (max-width: 40em) {
+@media (max-width: 40em) { /* mobile */
   .card {
     width: 18rem;
   }
@@ -29,8 +30,8 @@
   }
 
   .img-profile {
-    width: 100%;
-    height: 70vw;
+    width: 16rem;
+    height: 16rem;
     object-fit: cover;
   }
 
