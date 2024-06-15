@@ -1,4 +1,4 @@
-@media (min-width: 40em) { /* pc */
+@media (min-width: 40em) { /* tablet and desktop screens */
   .card {
     width: 40rem;
   }
@@ -8,10 +8,8 @@
   }
 
   .img-profile {
-    margin: auto;
     width: 100%;
     height: 38rem;
-    object-fit: cover;
   }
 
   .inner-container {
@@ -32,7 +30,6 @@
   .img-profile {
     width: 16rem;
     height: 16rem;
-    object-fit: cover;
   }
 
   .card-text-custom {
@@ -46,14 +43,14 @@
   
 }
 
-.card-title-custom, .card-text-custom {
+.card-title-custom, .card-text-custom { /* from bootstrap components for extra styling */
   display: flex;
   width: 100%;
   margin: 0 auto;
   justify-content: center;
 }
 
-.card-text ul {
+.card-text ul { /* from bootstrap components for extra styling */
   justify-content: left;
 }
 
@@ -68,6 +65,8 @@ a {
 .gitIcon {
   max-width: 30px;
 }
+
+/* two background colours */
 
 .outer-container {
   background-color: #dfd9fa3e;

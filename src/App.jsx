@@ -1,13 +1,3 @@
-// import Container from 'react-bootstrap/Container'
-// import Row from 'react-bootstrap/Row'
-// import Col from 'react-bootstrap/Col'
-// import Stack from 'react-bootstrap/Stack'
-// import Button from 'react-bootstrap/Button'
-// import Card from 'react-bootstrap/Card'
-// import Image from 'react-bootstrap/Image'
-// import Carousel from 'react-bootstrap/Carousel'
-import {Container, Row, Col, Stack, Button, Card, Image, Carousel, Collapse} from 'react-bootstrap'
-
 import profileImage from '../src/assets/profilePicture.jpg'
 import capstoneImage1 from '../src/assets/Capstone-Project-Screenshots/Capture9.jpg'
 import capstoneImage2 from '../src/assets/Capstone-Project-Screenshots/Capture10.jpg'
@@ -17,62 +7,8 @@ import capstoneImage5 from '../src/assets/Capstone-Project-Screenshots/Capture13
 import capstoneImage6 from '../src/assets/Capstone-Project-Screenshots/Capture14.jpg'
 import gitHubIcon from '../src/assets/gitHubIcon.jpg'
 
+import {Row, Col, Stack, Button, Card, Image, Carousel, Collapse} from 'react-bootstrap'
 import { useState } from 'react'
-
-const ContainerExample = () => {
-  return (
-    <Container>
-      <Row className='justify-content-md-center'>
-        <Col xs lg="2">1 of 3</Col>
-        <Col md="auto">2 of 3</Col>
-        <Col xs lg="2">3 of 3</Col>
-      </Row>
-      <Row>
-        <Col>1 of 3</Col>
-        <Col>2 of 3</Col>
-        <Col>3 of 3</Col>
-      </Row>
-    </Container>
-  )
-}
-
-const StackExample = () => {
-  return (
-    <Stack gap={3} className='col-md-4 mx-auto'>
-      <div className='p-2'>Quisque vehicula accumsan erat. Cras velit nulla, pharetra vitae quam ac, faucibus suscipit ex. Nullam elit metus, tempor lacinia est sit amet, congue dictum est. Integer sit amet tortor in nisi porttitor vulputate vestibulum nec lacus. Sed interdum mattis ex sed imperdiet. Nam condimentum, nibh quis tristique pellentesque, libero nunc semper mauris, efficitur lobortis ligula diam quis metus. Ut orci metus, tempor sit amet odio non, semper pellentesque est. Nunc tellus lectus, pharetra vitae laoreet id, euismod eu leo. Aliquam eu nisi ut arcu dapibus tempus non sit amet leo. Nullam bibendum turpis eros, eget dictum nisl maximus in. Quisque posuere metus ac ex venenatis pharetra. Donec volutpat et metus at euismod. Mauris volutpat ex bibendum molestie ultricies. Integer tempus eu erat a convallis. Maecenas lobortis commodo nibh, quis rhoncus nisi varius sit amet.</div>
-      <div className='p-2'>Second item</div>
-      <div className='p-2'>Third item</div>
-    </Stack>
-  )
-}
-
-const CardExample = () => {
-  return (
-    <Card>
-      <Card.Header>
-        <Image src={profileImage} roundedCircle/>
-      </Card.Header>
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text className='card-text-custom'>
-          Quisque vehicula accumsan erat. Cras velit nulla, 
-          pharetra vitae quam ac, faucibus suscipit ex. Nullam 
-          elit metus, tempor lacinia est sit amet, congue dictum est. 
-          Integer sit amet tortor in nisi porttitor vulputate vestibulum 
-          nec lacus. Sed interdum mattis ex sed imperdiet. Nam 
-          condimentum, nibh quis tristique pellentesque, 
-          libero nunc semper mauris, efficitur lobortis ligula diam quis 
-          metus. Ut orci metus, tempor sit amet odio non,
-        </Card.Text>
-        <Button variant='primary'>Go somewhere</Button>
-      </Card.Body>
-    </Card>
-  )
-}
-
-const CardStackRow = () => {
-  return <div className='p-2'><CardExample/></div>
-}
 
 const TileCard = () => {
   return (
@@ -202,45 +138,6 @@ const FinalCapstoneProject = () => {
   )
 }
 
-const CarouselExample = () => {
-  return (
-    <Carousel>
-      <Carousel.Item>
-        <Image className='img-carousel' src={capstoneImage1} rounded/>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Image className='img-carousel' src={capstoneImage2} rounded/>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Image className='img-carousel' src={capstoneImage3} rounded/>
-      </Carousel.Item>
-    </Carousel>
-  )
-}
-
-const CollapseExample = () => {
-  const [open, setOpen] = useState(false)
-
-  return (
-    <>
-      <Button
-        onClick={() => setOpen(!open)}
-        aria-controls='example-collapse-text'
-        aria-expanded={open}
-      >
-        click
-      </Button>
-      <Collapse in={open}>
-        <div id='example-collapse-text'>
-          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-          labore wes anderson cred nesciunt sapiente ea proident.
-        </div>
-      </Collapse>
-    </>
-  )
-}
-
 const TaskPlannerProject = () => {
   return (
     <div className='p-2'>
@@ -320,25 +217,17 @@ function App() {
   ]
 
   return (
-    // <ContainerExample/>
-    // <StackExample />
-    // <CardExample />
-    <>
-      <div className='outer-container'>
-        <div className='inner-container'>
-          <Stack gap={3} className='col-md-4 mx-auto align-items-center'>
-            <TileCard />
-            <ContactCard />
-            <EducationCard />
-            <TechnicalSkillsCard skills={skills}/>
-            <ExperienceCard />
-          </Stack>
-        </div>
+    <div className='outer-container'>
+      <div className='inner-container'>
+        <Stack gap={3} className='col-md-4 mx-auto align-items-center'>
+          <TileCard />
+          <ContactCard />
+          <EducationCard />
+          <TechnicalSkillsCard skills={skills}/>
+          <ExperienceCard />
+        </Stack>
       </div>
-      
-      
-    </>
-    // <CollapseExample />
+    </div>
   )
 }
 
