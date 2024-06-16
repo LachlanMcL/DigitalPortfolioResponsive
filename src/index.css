@@ -73,12 +73,37 @@ a {
 /* two background colours */
 
 .outer-container {
-  background-color: #dfd9fa3e;
+  background-color: rgba(223, 217, 250, 0.243)
 }
 
 .inner-container {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%)!important;
   display: flex;
   margin: 0 auto;
   justify-content: center;
+}
+
+.card-header {
+  background-color: hsla(216, 98%, 52%, 0.049)!important;
+  color: hsl(216, 98%, 52%)!important;
+}
+
+.card-body .card-title {
+  color: hsl(216, 95%, 42%)!important;
+}
+
+.card-body .card .card-title {
+  color: hsl(216, 98%, 52%)!important;
+}
+
+.card-body-custom { /* experience card background */
+  background-color: hsla(216, 98%, 52%, 0.049)!important;
+}
+
+.card-header-custom { /* photo background */
+  background-color: rgba(33, 37, 41, 0.03)!important;
+}
+
+.card-body .quote {
+  color: hsl(216, 98%, 52%)!important;
 }

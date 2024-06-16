@@ -15,7 +15,7 @@ const TileCard = () => {
   return (
     <div className='p-2'>
       <Card>
-        <Card.Header>
+        <Card.Header className='card-header-custom'>
           <Image className='img-profile' src={profileImage} roundedCircle/>
         </Card.Header>
         <Card.Body>
@@ -42,7 +42,7 @@ const ContactCard = () => {
           <Card.Text className='card-text-custom'><a href='https://github.com/LachlanMcL' target="_blank">LachlanMcL <Image className='gitIcon' src={gitHubIcon}/></a></Card.Text>
           <Card.Text className='card-text-custom'><a href='https://www.linkedin.com/in/lachlanmcleod-/' target="_blank">Lachlan McLeod <Image className='linkedinIcon' src={linkedinIcon}/></a></Card.Text>
           <br></br>
-          <Card.Text className='card-text-custom'>Fast learner, eager to cement myself in the programming world</Card.Text>
+          <Card.Text className='card-text-custom quote'>Fast learner, eager to cement myself in the programming world</Card.Text>
         </Card.Body>
       </Card>
     </div>
@@ -74,7 +74,7 @@ const ExperienceCard = () => {
         <Card.Header>
           <Card.Title className='card-title-custom'>Experience and Personal Projects</Card.Title>
         </Card.Header>
-        <Card.Body>
+        <Card.Body className='card-body-custom'>
           <Stack gap={3} className='col-md-4 mx-auto align-items-center'>
             <FinalCapstoneProject />
             <TaskPlannerProject />
