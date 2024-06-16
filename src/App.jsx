@@ -191,8 +191,8 @@ const TechnicalSkillsCard = ({skills}) => {
             {skills.map(skill => {
               return (
                 <Row key={skill.name} className='justify-content-center'>
-                  <Col xs="5" md="2">{skill.name}</Col>
-                  <Col xs="3" md="auto">{skill.level}</Col>
+                  <Col xs="5" md="3">{skill.name}</Col>
+                  <Col xs="auto">{skill.level}</Col>
                 </Row>
               )
             })}
