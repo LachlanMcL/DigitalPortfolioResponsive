@@ -8,8 +8,9 @@ import capstoneImage6 from '../src/assets/Capstone-Project-Screenshots/Capture14
 import gitHubIcon from '../src/assets/gitHubIcon.jpg'
 import linkedinIcon from '../src/assets/linkedinIcon.jpg'
 
-import {Row, Col, Stack, Button, Card, Image, Carousel, Collapse} from 'react-bootstrap'
+import {Stack, Button, Card, Image, Carousel, Collapse} from 'react-bootstrap'
 import { useState } from 'react'
+import Plot from 'react-plotly.js'
 
 const TileCard = () => {
   return (
@@ -180,6 +181,39 @@ const WeatherAppProject = () => {
 }
 
 const TechnicalSkillsCard = ({skills}) => {
+  let labels = skills.map(skill => skill.name)
+  labels.unshift('skills')
+  let values = skills.map(skill => skill.level)
+  const total = values.reduce((acc, value) => acc + value, 0)
+  values.unshift(total)
+  let parents = new Array(labels.length)
+  parents[0] = '';
+  parents.fill("skills", 1)
+
+  // start: hsl(216, 86%, 47%)
+  const originalH = 216
+  const originalS = 86
+  const originalL = 47
+  let s = originalS
+  let l = originalL
+  const gradiantDegree = 4
+
+  let colors = [''] 
+
+  for (let i = 0; i < skills.length / 2; i++) {
+    if (!(s + gradiantDegree > 100)) s += gradiantDegree
+    if (!(l + gradiantDegree > 100)) l += gradiantDegree
+    colors.push(`hsl(${originalH}, ${s}%, ${l}%)`)
+  }
+
+  s = originalS
+  l = originalL
+  for (let i = skills.length - 1; i > skills.length / 2; i--) {
+    if (!(s - gradiantDegree < 0)) s -= gradiantDegree
+    if (!(l - gradiantDegree < 0)) l -= gradiantDegree
+    colors.push(`hsl(${originalH}, ${s}%, ${l}%)`)
+  }
+
   return (
     <div className='p-2'>
       <Card>
@@ -188,14 +222,26 @@ const TechnicalSkillsCard = ({skills}) => {
         </Card.Header>
         <Card.Body>
           <Card.Text className='card-text-custom'>1 being competent, 5 being expert</Card.Text>
-            {skills.map(skill => {
-              return (
-                <Row key={skill.name} className='justify-content-center'>
-                  <Col xs="5" md="3">{skill.name}</Col>
-                  <Col xs="auto">{skill.level}</Col>
-                </Row>
-              )
-            })}
+            <Plot
+                data={[{
+                  type: "treemap",
+                  labels: labels,
+                  parents: parents,
+                  values: values,
+                  branchvalues: "total",
+                  textinfo: "label+value",
+                  marker: {colors: colors},
+                }]}
+                layout={{margin: {
+                  l: 0,
+                  r: 0,
+                  b: 0,
+                  t: 0,
+                }}}
+                useResizeHandler={true}
+                style={{width: "100%", height: "100%"}}
+                config={{staticPlot: true}}
+              />
         </Card.Body>
       </Card>
     </div>
