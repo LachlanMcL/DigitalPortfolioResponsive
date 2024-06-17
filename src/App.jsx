@@ -94,7 +94,7 @@ const FinalCapstoneProject = () => {
     <div className='p-2'>
       <Card className='card-custom'>
         <Card.Body>
-          <Card.Title>Final Capstone Project, 2023</Card.Title>
+          <Card.Title>Final Capstone Project - 2023</Card.Title>
           <ul><Card.Text>
               <li>Collaborated in an agile environment with two Project Managers and another Software Engineer.</li>
               <li>Developed a statistical analysis tool for two University Professors.</li>
