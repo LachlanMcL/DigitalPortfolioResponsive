@@ -166,7 +166,7 @@ const WeatherAppProject = () => {
     <div className='p-2'>
       <Card className='card-custom'>
         <Card.Body>
-          <Card.Title><a href='https://github.com/LachlanMcL/weather-app' target="_blank">Weather App - June 2024 <Image className='gitIcon' src={gitHubIcon}/></a></Card.Title>
+          <Card.Title><a href='https://github.com/LachlanMcL/Weather-App-2' target="_blank">Weather App - June 2024 <Image className='gitIcon' src={gitHubIcon}/></a></Card.Title>
           <ul><Card.Text>
             <li>Developed a static website utilizing the University of <a href='https://studies.cs.helsinki.fi/restcountries/' target="_blank">Helsinki's country API</a> to provide users with comprehensive country information.</li>
             <li>Enabled users to select a specific country to view current weather data, retrieved from the <a href='https://openweathermap.org/api' target="_blank">Open Weather Map API</a>.</li>
