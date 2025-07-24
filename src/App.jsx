@@ -172,7 +172,7 @@ const WeatherAppProject = () => {
             <li>Enabled users to select a specific country to view current weather data, retrieved from the <a href='https://openweathermap.org/api' target="_blank">Open Weather Map API</a>.</li>
             <li>Leveraged the Bootstrap CSS library to create a clean and visually appealing layout.</li>
             <li>Implemented the application using the React.js framework.</li>
-            <li>Deployed an <a href='https://weather-app-qek0.onrender.com/' target="_blank">example</a> application on Render.com.</li>
+            <li>Deployed an <a href='https://weather-app-2-wfj6.onrender.com/' target="_blank">example</a> application on Render.com.</li>
           </Card.Text></ul>
         </Card.Body>
       </Card>
